@@ -19,9 +19,17 @@
         {% endif %}
     </head>
     <body>
-        {% block body %}
+        {% include '_partials/navbar.html.twig' %}
+
+        <main>
+
+            {% block body %}
 
         
-        {% endblock %}
+            {% endblock %}
+
+        </main>
+        
+        {% include '_partials/footer.html.twig' %}
     </body>
 </html>
