@@ -1,3 +1,49 @@
+:root {
+    --navy: #0E2A47;
+    --ivory: #F8F4EC;
+    --beige: #EADCC7;
+    --gold: #C89B54;
+    --sage: #9CA668;
+    --text: #1D2B3A;
+}
+
 body {
-    background-color: skyblue;
+    margin: 0;
+    background-color: var(--ivory);
+    color: var(--text);
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--navy);
+    padding: 16px 40px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+header a:hover {
+    color: var(--gold);
+}
+
+main {
+    padding: 40px;
+    min-height: 60vh;
+}
+
+footer {
+    background-color: var(--navy);
+    color: var(--beige);
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
 }
