@@ -1,9 +1,37 @@
+
 {% extends 'base.html.twig' %}
 
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
-<h1>Chancelle RAVELOSOA</h1>
-<P>Développeuse junior en reconversion!</P>
-{% endblock %}
 
+<section class="hero">
+
+    <div class="hero-content">
+        <p class="hero-subtitle">
+            DÉVELOPPEUSE WEB ET CRÉATION NUMÉRIQUE
+        </p>
+
+        <h1>Chancelle RAVELOSOA</h1>
+
+        <p class="hero-tagline">
+            Changer de voie, sans repartir de zéro.
+        </p>
+
+        <p class="hero-description">
+            Je transforme des idées en pages web claires et utiles,
+            avec HTML, CSS, PHP et Symfony.
+        </p>
+
+        <a href="#projets" class="btn">Découvrir mes projets</a>
+        <a href="#services" class="btn btn-secondary">Découvrir mes services</a>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="{{ asset('images/photo.jpg') }}" alt="Chancelle Ravelosoa">
+    </div>
+
+</section>
+
+{% endblock %}

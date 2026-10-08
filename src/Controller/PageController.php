@@ -14,17 +14,25 @@ final class PageController extends AbstractController
         return $this->render('page/parcours.html.twig');
     }
 
-    #[Route('/competences', name: 'app_competences')]
-    public function competences(): Response
-    {
-        return $this->render('page/competences.html.twig');
-    }
 
     #[Route('/projets', name: 'app_projets')]
     public function projets(): Response
     {
         return $this->render('page/projets.html.twig');
     }
+
+    #[Route('/services', name: 'app_services')]
+    public function services(): Response
+    {
+        return $this->render('page/services.html.twig');
+    }
+
+     #[Route('/competences', name: 'app_competences')]
+    public function competences(): Response
+    {
+        return $this->render('page/competences.html.twig');
+    }
+
 
     #[Route('/contact', name: 'app_contact')]
     public function contact(): Response

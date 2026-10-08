@@ -1,10 +1,18 @@
-<header>
-    <nav>
+<header class="site-header">
+    <a href="{{ path('app_home') }}">
+        <img src="{{ asset('images/logo.png') }}" alt="Logo Chancelle Ravelosoa" height="44">
+    </a>
+
+
+
+    <nav class="'main-nav">
         <a href="{{ path('app_home') }}">Accueil</a>
         
         <a href="{{ path('app_parcours') }}">Parcours</a>
 
         <a href="{{ path('app_projets') }}">Projets</a>
+
+        <a href="{{ path('app_services') }}">Services</a>
 
         <a
             href="{{ path('app_competences') }}"
@@ -12,10 +20,12 @@
 
         <a href="{{ path('app_contact') }}">Contact</a>
 
-        <a href="/documents/CV-Chancelle-Ravelosoa.pdf" target="_blank">Télécharger mon CV</a>
+        <a class="btn-cv" href="/documents/CV-Chancelle-Ravelosoa.pdf" target="_blank">Télécharger mon CV</a>
 
 
     </nav>
+
+    
 
 
 </header>
