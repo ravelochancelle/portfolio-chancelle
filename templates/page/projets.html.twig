@@ -1,10 +1,42 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Projets{% endblock %}
+{% block title %}Mes projets | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
+    <main class="container">
+        <section class="section">
+            <h1>Mes projets</h1>
 
-    <h1>Mes projets</h1>
-    <p>Page en construction.</p>
+            <p>
+                Découvrez les projets qui illustrent mon parcours,
+                mes apprentissages et ma progression en développement web.
+            </p>
 
+            <div class="cards cards-projects">
+
+                <article class="card card-project">
+                    <img src="{{ asset('images/Portfolio_wordpress.png') }}" alt="Projet Portfolio WordPress">
+                    <h2>Portfolio WordPress</h2>
+                    <p>Création d'un site web avec WordPress et Elementor.</p>
+                    <p>WordPress · Elementor · CSS</p>
+                </article>
+
+                <article class="card card-project">
+                    <img src="{{ asset('images/MAMS.png') }}" alt="Projet MAMS">
+                    <h2>MAMS</h2>
+                    <p>Participation à un projet de gestion des indemnités kilométriques.</p>
+                    <p>PHP · Symfony · MySQL</p>
+                </article>
+
+                <article class="card card-project">
+                    <img src="{{ asset('images/Sortir.png') }}" alt="Projet Sortir">
+                    <h2>Sortir</h2>
+                    <p>Projet de développement web réalisé dans le cadre de mon parcours.</p>
+                    <p>PHP · Symfony</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
 {% endblock %}
