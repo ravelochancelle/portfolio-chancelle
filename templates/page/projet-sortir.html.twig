@@ -1,0 +1,106 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet Sortir | Chancelle Ravelosoa{% endblock %}
+
+{% block body %}
+    <main class="project-detail">
+
+        <section class="project-hero">
+            <a class="back-link" href="{{ path('app_projets') }}">
+                ← Retour aux projets
+            </a>
+
+            <p class="eyebrow">PROJET 03 · PROJET DE FORMATION</p>
+
+            <h1>Sortir</h1>
+
+            <p class="project-intro">
+                Application web de gestion de sorties développée
+                dans le cadre de ma formation. J'ai contribué à la
+                conception des interfaces et au développement de
+                fonctionnalités permettant de créer, rechercher
+                et rejoindre des sorties.
+            </p>
+
+            <div class="project-tags">
+                <span>PHP</span>
+                <span>Symfony</span>
+                <span>MySQL</span>
+                <span>HTML / CSS</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">01 — LE CONTEXTE</p>
+
+            <h2>Faciliter l'organisation des sorties</h2>
+
+            <p>
+                Sortir est une application web réalisée dans le cadre
+                de mon parcours de formation. Elle a pour objectif
+                de permettre aux utilisateurs de consulter les sorties
+                proposées et de participer à leur organisation.
+            </p>
+
+            <p>
+                Ce projet m'a permis de travailler sur une application
+                qui associe la gestion des données, les fonctionnalités
+                métier et l'interface utilisateur.
+            </p>
+        </section>
+
+        <section class="project-section project-highlight">
+            <p class="eyebrow">02 — MA CONTRIBUTION</p>
+
+            <h2>Concevoir des interfaces et développer des fonctionnalités</h2>
+
+            <ul>
+                <li>
+                    Contribution à la conception des interfaces utilisateur.
+                </li>
+                <li>
+                    Participation au développement de la création des sorties.
+                </li>
+                <li>
+                    Contribution à la recherche des sorties.
+                </li>
+                <li>
+                    Participation à la fonctionnalité d'inscription aux sorties.
+                </li>
+                <li>
+                    Travail sur la clarté et la fluidité du parcours utilisateur.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">03 — LES COMPÉTENCES</p>
+
+            <h2>Relier les fonctionnalités à l'expérience utilisateur</h2>
+
+            <p>
+                Ce projet m'a permis de mieux comprendre l'organisation
+                d'une application web et la manière dont les interfaces
+                et les fonctionnalités répondent aux besoins des utilisateurs.
+            </p>
+
+            <p>
+                J'ai également pu approfondir ma pratique du développement
+                web et mieux appréhender les différentes étapes de
+                réalisation d'une application dans un cadre de formation.
+            </p>
+        </section>
+
+        <nav class="project-navigation" aria-label="Navigation des projets">
+            <a href="{{ path('app_projet_mams') }}">
+                ← Projet précédent : MAMS
+            </a>
+
+            <a href="{{ path('app_projets') }}">
+                Tous les projets →
+            </a>
+        </nav>
+
+    </main>
+{% endblock %}

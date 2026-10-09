@@ -1,0 +1,81 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio WordPress | Chancelle Ravelosoa{% endblock %}
+
+{% block body %}
+    <main class="project-detail">
+
+        <section class="project-hero">
+            <a class="back-link" href="{{ path('app_projets') }}">
+                ← Retour aux projets
+            </a>
+
+            <p class="eyebrow">PROJET 01 · CRÉATION WEB</p>
+
+            <h1>Portfolio WordPress</h1>
+
+            <p class="project-intro">
+                Concevoir une présence numérique claire, élégante
+                et cohérente, en mettant l'accent sur la présentation
+                des contenus et l'expérience utilisateur.
+            </p>
+
+            <div class="project-tags">
+                <span>WordPress</span>
+                <span>Elementor</span>
+                <span>Canva</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">01 — LE CONTEXTE</p>
+            <h2>Donner forme à une idée</h2>
+
+            <p>
+                Ce projet m'a permis d'explorer la création d'un site
+                WordPress et l'organisation de ses différentes sections.
+                L'objectif était de construire une présentation visuelle
+                cohérente et facile à parcourir.
+            </p>
+        </section>
+
+        <section class="project-section project-highlight">
+            <p class="eyebrow">02 — LES RÉALISATIONS</p>
+            <h2>De la structure au design</h2>
+
+            <ul>
+                <li>Prise en main de WordPress en environnement local.</li>
+                <li>Découverte et utilisation d'Elementor.</li>
+                <li>Exploration de Starter Templates pour la structure.</li>
+                <li>Travail sur la présentation et l'organisation des contenus.</li>
+                <li>Création de supports visuels avec Canva.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">03 — LES COMPÉTENCES</p>
+            <h2>Ce que ce projet m'a apporté</h2>
+
+            <p>
+                Ce travail m'a permis de développer ma compréhension
+                de la structure d'un site web, de découvrir des outils
+                de création de pages et de mieux appréhender l'importance
+                de la cohérence visuelle.
+            </p>
+
+            <p>
+                Il constitue une première étape dans mon parcours
+                de création numérique et de développement web.
+            </p>
+        </section>
+
+        <nav class="project-navigation" aria-label="Navigation des projets">
+            <a href="{{ path('app_projet_mams') }}">
+                Projet suivant : MAMS →
+            </a>
+            
+        </nav>
+
+    </main>
+{% endblock %}

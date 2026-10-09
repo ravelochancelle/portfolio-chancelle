@@ -1,0 +1,115 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet SkillDev | Chancelle Ravelosoa{% endblock %}
+
+{% block body %}
+    <main class="project-detail">
+
+        {# Présentation du projet #}
+        <section class="project-hero">
+
+            <a class="back-link" href="{{ path('app_projets') }}">
+                ← Retour aux projets
+            </a>
+
+            <p class="eyebrow">PROJET 04 · INTÉGRATION WEB</p>
+
+            <h1>SkillDev — Landing page</h1>
+
+            <p class="project-intro">
+                Réalisation d'une landing page présentant une plateforme
+                de formation en ligne. Ce projet m'a permis de travailler
+                sur la structure HTML et la mise en page CSS d'une interface web.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Flexbox</span>
+                <span>CSS Grid</span>
+            </div>
+
+        </section>
+
+        {# Contexte #}
+        <section class="project-section">
+
+            <p class="eyebrow">01 — LE CONTEXTE</p>
+
+            <h2>Présenter une plateforme de formation</h2>
+
+            <p>
+                SkillDev est un exercice d'intégration web réalisé à partir
+                d'un modèle de landing page. L'objectif était de reproduire
+                une page de présentation pour une plateforme de formation en ligne.
+            </p>
+
+            <p>
+                Ce travail m'a permis de mettre en pratique les bases du HTML
+                et du CSS afin d'organiser les contenus et de construire
+                une interface structurée.
+            </p>
+
+        </section>
+
+        {# Réalisations #}
+        <section class="project-section project-highlight">
+
+            <p class="eyebrow">02 — LE TRAVAIL RÉALISÉ</p>
+
+            <h2>Construire la structure et la mise en page</h2>
+
+            <ul>
+                <li>
+                    Structuration des contenus avec HTML5.
+                </li>
+                <li>
+                    Mise en forme des éléments avec CSS3.
+                </li>
+                <li>
+                    Utilisation de Flexbox pour organiser les éléments de la page.
+                </li>
+                <li>
+                    Utilisation de CSS Grid pour structurer la mise en page.
+                </li>
+            </ul>
+
+        </section>
+
+        {# Compétences acquises #}
+        <section class="project-section">
+
+            <p class="eyebrow">03 — LES COMPÉTENCES</p>
+
+            <h2>Consolider mes bases en intégration web</h2>
+
+            <p>
+                Ce projet m'a permis de pratiquer la création d'une page web,
+                de renforcer ma compréhension de la structure HTML et
+                d'approfondir les possibilités de mise en page offertes par CSS.
+            </p>
+
+            <div class="project-tags">
+                <span>Structure HTML</span>
+                <span>Mise en page CSS</span>
+                <span>Organisation des contenus</span>
+            </div>
+
+        </section>
+
+        {# Navigation entre les projets #}
+        <nav class="project-navigation" aria-label="Navigation des projets">
+
+            <a href="{{ path('app_projet_sortir') }}">
+                ← Projet précédent : Sortir
+            </a>
+
+            <a href="{{ path('app_projets') }}">
+                Tous les projets →
+            </a>
+
+        </nav>
+
+    </main>
+{% endblock %}

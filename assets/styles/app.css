@@ -440,6 +440,57 @@ header a:last-child:hover {
     margin: 0 0 14px;
 }
 
+
+/* Liens des cartes projets */
+
+.card-project-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-project-link img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.card-project-content {
+    padding: 0 8px 8px;
+}
+
+.project-category {
+    color: #98713A;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.project-technologies {
+    font-size: 13px;
+}
+
+.project-discover {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.card-project-link:hover .project-discover {
+    color: var(--gold);
+}
+
+.card-project-link:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
 .section-header h2 {
     margin: 0;
 }
@@ -512,6 +563,160 @@ header a:last-child:hover {
     }
 }
 
+
+/* =========================================
+   PAGES DETAILLEES DES PROJETS
+   Palette : bleu nuit, ivoire, beige et or
+   ========================================= */
+
+.project-detail {
+    --project-navy: #0E2A47;
+    --project-ivory: #F8F4EC;
+    --project-beige: #EADCC7;
+    --project-gold: #C89B54;
+    --project-text: #1D2B3A;
+
+    color: var(--project-text);
+    background: var(--project-ivory);
+    padding-bottom: 5rem;
+}
+
+.project-hero {
+    background: var(--project-navy);
+    color: var(--project-ivory);
+    padding: clamp(3rem, 8vw, 7rem) max(7%, calc((100% - 1100px) / 2));
+}
+
+.project-hero .back-link {
+    display: inline-block;
+    margin-bottom: 3rem;
+    color: var(--project-beige);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-hero .back-link:hover {
+    color: white;
+}
+
+.project-detail .eyebrow {
+    color: var(--project-gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.project-hero h1 {
+    max-width: 900px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 1.5rem;
+}
+
+.project-intro {
+    max-width: 700px;
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    line-height: 1.9;
+    color: #E5E1D9;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 2rem;
+}
+
+.project-tags span {
+    border: 1px solid rgba(234, 220, 199, 0.45);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+}
+
+.project-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.project-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0 0 1.5rem;
+}
+
+.project-section p,
+.project-section li {
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.project-section ul {
+    padding-left: 1.3rem;
+}
+
+.project-section li {
+    padding-left: 0.35rem;
+    margin-bottom: 0.65rem;
+}
+
+.project-highlight {
+    max-width: 100%;
+    padding-left: max(2rem, calc((100% - 836px) / 2));
+    padding-right: max(2rem, calc((100% - 836px) / 2));
+    background: var(--project-beige);
+}
+
+.project-navigation {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid #D8CBB9;
+}
+
+.project-navigation a {
+    color: var(--project-navy);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.project-navigation a:hover {
+    color: #98713A;
+}
+
+@media (max-width: 600px) {
+    .project-hero {
+        padding: 2.5rem 1.4rem 3.5rem;
+    }
+
+    .project-hero .back-link {
+        margin-bottom: 2rem;
+    }
+
+    .project-section {
+        padding: 3rem 1.4rem;
+    }
+
+    .project-highlight {
+        padding: 3rem 1.4rem;
+    }
+
+    .project-navigation {
+        padding: 1.5rem 1.4rem;
+        flex-direction: column;
+    }
+}
+
 /* =========================
     PIED DE PAGE
    ========================= */
@@ -564,3 +769,4 @@ header a:last-child:hover {
         align-self: center;
     }
 }
+

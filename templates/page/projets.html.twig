@@ -4,39 +4,183 @@
 {% block title %}Mes projets | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
-    <main class="container">
-        <section class="section">
-            <h1>Mes projets</h1>
+    <main class="projects-page">
 
+        <section class="projects-hero container">
+            <p class="eyebrow">MON TRAVAIL · MES RÉALISATIONS</p>
+
+            <h1>Des projets pour apprendre, concevoir et progresser.</h1>
+
+            <p class="projects-intro">
+                Chaque projet représente une étape de mon parcours :
+                de la création de sites web à la participation au
+                développement d'applications, en passant par l'intégration web.
+            </p>
+        </section>
+
+        <section class="projects-list container" aria-label="Liste de mes projets">
+
+            {# Projet 1 : WordPress #}
+            <article class="project-item">
+                <div class="project-number">01</div>
+
+                <div class="project-content">
+                    <p class="eyebrow">CRÉATION WEB</p>
+                    <h2>Portfolio WordPress</h2>
+
+                    <p>
+                        Concevoir une présence en ligne et organiser les contenus
+                        pour présenter un profil et ses réalisations.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>WordPress</span>
+                        <span>Elementor</span>
+                        <span>Canva</span>
+                    </div>
+
+                    <a
+                        class="project-link"
+                        href="{{ path('app_projet_wordpress') }}"
+                    >
+                        Découvrir le projet <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="project-visual">
+                    <img
+                        src="{{ asset('images/Portfolio_wordpress.png') }}"
+                        alt="Aperçu du projet de portfolio WordPress"
+                        loading="lazy"
+                    >
+                </div>
+            </article>
+
+            {# Projet 2 : MAMS #}
+            <article class="project-item">
+                <div class="project-number">02</div>
+
+                <div class="project-content">
+                    <p class="eyebrow">EXPÉRIENCE PROFESSIONNELLE</p>
+                    <h2>Application MAMS</h2>
+
+                    <p>
+                        Participation, pendant un stage chez MSConsulting,
+                        à un projet de gestion des déplacements et des
+                        indemnités kilométriques.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Base de données</span>
+                        <span>Balsamiq</span>
+                    </div>
+
+                    <a
+                        class="project-link"
+                        href="{{ path('app_projet_mams') }}"
+                    >
+                        Découvrir le projet <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="project-visual">
+                    <img
+                        src="{{ asset('images/MAMS.png') }}"
+                        alt="Aperçu du projet d'application MAMS"
+                        loading="lazy"
+                    >
+                </div>
+            </article>
+
+            {# Projet 3 : Sortir #}
+            <article class="project-item">
+                <div class="project-number">03</div>
+
+                <div class="project-content">
+                    <p class="eyebrow">PROJET DE FORMATION</p>
+                    <h2>Application Sortir</h2>
+
+                    <p>
+                        Application web permettant de consulter des sorties,
+                        d'en proposer et de participer à leur organisation.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>Symfony</span>
+                        <span>MySQL</span>
+                    </div>
+
+                    <a
+                        class="project-link"
+                        href="{{ path('app_projet_sortir') }}"
+                    >
+                        Découvrir le projet <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="project-visual">
+                    <img
+                        src="{{ asset('images/Sortir.png') }}"
+                        alt="Aperçu du projet d'application Sortir"
+                        loading="lazy"
+                    >
+                </div>
+            </article>
+
+            {# Projet 4 : SkillDev #}
+            <article class="project-item">
+                <div class="project-number">04</div>
+
+                <div class="project-content">
+                    <p class="eyebrow">INTÉGRATION WEB</p>
+                    <h2>SkillDev — Landing page</h2>
+
+                    <p>
+                        Reproduction d'une page de présentation d'une
+                        plateforme de formation en ligne, avec un travail
+                        sur la structure et la mise en page.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Flexbox</span>
+                        <span>CSS Grid</span>
+                    </div>
+
+                    <a
+                        class="project-link"
+                        href="{{ path('app_projet_skilldev') }}"
+                    >
+                        Découvrir le projet <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="project-visual project-visual-placeholder">
+                    <span>SkillDev</span>
+                    <p>Landing page · HTML & CSS</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="projects-contact container">
+            <p class="eyebrow">ET MAINTENANT ?</p>
+            <h2>Un projet ou une opportunité à partager ?</h2>
             <p>
-                Découvrez les projets qui illustrent mon parcours,
-                mes apprentissages et ma progression en développement web.
+                Je souhaite continuer à développer mes compétences
+                et à les mettre en pratique dans un environnement professionnel.
             </p>
 
-            <div class="cards cards-projects">
-
-                <article class="card card-project">
-                    <img src="{{ asset('images/Portfolio_wordpress.png') }}" alt="Projet Portfolio WordPress">
-                    <h2>Portfolio WordPress</h2>
-                    <p>Création d'un site web avec WordPress et Elementor.</p>
-                    <p>WordPress · Elementor · CSS</p>
-                </article>
-
-                <article class="card card-project">
-                    <img src="{{ asset('images/MAMS.png') }}" alt="Projet MAMS">
-                    <h2>MAMS</h2>
-                    <p>Participation à un projet de gestion des indemnités kilométriques.</p>
-                    <p>PHP · Symfony · MySQL</p>
-                </article>
-
-                <article class="card card-project">
-                    <img src="{{ asset('images/Sortir.png') }}" alt="Projet Sortir">
-                    <h2>Sortir</h2>
-                    <p>Projet de développement web réalisé dans le cadre de mon parcours.</p>
-                    <p>PHP · Symfony</p>
-                </article>
-
-            </div>
+            <a
+                class="project-link"
+                href="{{ path('app_contact') }}"
+            >
+                Me contacter <span aria-hidden="true">→</span>
+            </a>
         </section>
+
     </main>
 {% endblock %}

@@ -1,0 +1,86 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Projet MAMS | Chancelle Ravelosoa{% endblock %}
+
+{% block body %}
+    <main class="project-detail">
+
+        <section class="project-hero">
+            <a class="back-link" href="{{ path('app_projets') }}">
+                ← Retour aux projets
+            </a>
+
+            <p class="eyebrow">PROJET 02 · EXPÉRIENCE PROFESSIONNELLE</p>
+
+            <h1>Application MAMS</h1>
+
+            <p class="project-intro">
+                Participation au développement d'une application
+                de gestion des indemnités kilométriques dans le cadre
+                d'un stage chez MSConsulting en mai 2024.
+            </p>
+
+            <div class="project-tags">
+                <span>PHP</span>
+                <span>Base de données</span>
+                <span>Maquettage</span>
+                <span>Développement web</span>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">01 — LE CONTEXTE</p>
+            <h2>Répondre à un besoin de gestion</h2>
+
+            <p>
+                MAMS est un projet d'application lié à la gestion
+                des déplacements et des indemnités kilométriques.
+                Durant mon stage, j'ai participé à différentes étapes
+                de sa réalisation, en collaboration avec l'équipe.
+            </p>
+        </section>
+
+        <section class="project-section project-highlight">
+            <p class="eyebrow">02 — MA CONTRIBUTION</p>
+            <h2>Participer à la réalisation de l'application</h2>
+
+            <ul>
+                <li>Contribution à la base de données.</li>
+                <li>Participation à la réalisation de la page de connexion.</li>
+                <li>Contribution à la fonctionnalité d'ajout de trajets.</li>
+                <li>Participation à la gestion des trajets.</li>
+                <li>Réalisation de maquettes et de wireframes avec Balsamiq.</li>
+                <li>Contribution à l'intégration de l'interface.</li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <p class="eyebrow">03 — LES COMPÉTENCES</p>
+            <h2>Une première expérience en équipe</h2>
+
+            <p>
+                Cette expérience m'a permis de découvrir le déroulement
+                d'un projet web en contexte professionnel et de mieux
+                comprendre le lien entre une interface, les données
+                et les fonctionnalités attendues.
+            </p>
+
+            <p>
+                Elle m'a également permis de me familiariser avec
+                le maquettage et la traduction d'un besoin en éléments
+                concrets de développement.
+            </p>
+        </section>
+
+        <nav class="project-navigation" aria-label="Navigation des projets">
+            <a href="{{ path('app_projet_wordpress') }}">
+                ← Projet précédent : WordPress
+            </a>
+            <a href="{{ path('app_projet_sortir') }}">
+                Projet suivant : Sortir →
+            </a>
+        </nav>
+
+    </main>
+{% endblock %}
