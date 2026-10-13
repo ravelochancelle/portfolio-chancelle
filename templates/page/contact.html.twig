@@ -1,10 +1,194 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Contact | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
+    <main class="contact-page">
 
-    <h1>Contact</h1>
-    <p>Page en construction.</p>
+        <section class="contact-section">
+
+            <div class="contact-heading">
+                <span class="contact-eyebrow">ÉCHANGEONS ENSEMBLE</span>
+                <h1>Contact</h1>
+                <p>
+                    Vous souhaitez échanger ?
+                    Je suis disponible pour discuter de nouvelles opportunités
+                    professionnelles ou d'un projet qui vous tient à cœur.
+                </p>
+            </div>
+
+            <div class="contact-panel">
+
+                <div class="contact-info">
+                    <h2>Parlons de votre projet</h2>
+                    <p class="contact-intro">
+                        Vous pouvez me contacter ou consulter mon CV
+                        pour en savoir plus sur mon parcours.
+                    </p>
+
+                    <a
+                        class="contact-info-item"
+                        href="mailto:ravelosoa.chancelle@gmail.com"
+                    >
+                        <span class="contact-icon" aria-hidden="true">✉</span>
+                        <span>
+                            <strong>Email</strong>
+                            <small>ravelosoa.chancelle@gmail.com</small>
+                        </span>
+                    </a>
+
+                    <div class="contact-info-item">
+                        <span class="contact-icon" aria-hidden="true">☎</span>
+                        <span>
+                            <strong>Téléphone</strong>
+                            <small>Disponible sur demande</small>
+                        </span>
+                    </div>
+
+                    <a
+                        class="contact-info-item"
+                        href="{{ asset('documents/CV-Chancelle-Ravelosoa.pdf') }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="contact-icon" aria-hidden="true">↓</span>
+                        <span>
+                            <strong>Télécharger mon CV</strong>
+                            <small>Document PDF</small>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Envoyez-moi un message</h2>
+
+                    {# Messages de confirmation ou d'erreur #}
+                                    
+                    
+                    {% for message in app.flashes('success') %}
+                        <div
+                            class="popup-overlay"
+                            id="success-popup"
+                            onclick="if (event.target === this) this.remove();"
+                        >
+                            <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+                                <button
+                                    type="button"
+                                    class="popup-close"
+                                    id="close-popup"
+                                    aria-label="Fermer la fenêtre"
+                                    onclick="document.getElementById('success-popup').remove();"
+                                >&times;</button>
+
+                                <div class="popup-icon">✓</div>
+                                <h2 id="popup-title">Message envoyé !</h2>
+                                <p>{{ message }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+
+
+                    {% for message in app.flashes('error') %}
+                        <p
+                            class="contact-alert contact-alert-error"
+                            role="alert"
+                        >
+                            {{ message }}
+                        </p>
+                    {% endfor %}
+
+                    <form
+                        class="contact-form"
+                        action="{{ path('app_contact') }}"
+                        method="post"
+                    >
+                        {# Protection contre les soumissions frauduleuses #}
+                        <input
+                            type="hidden"
+                            name="_token"
+                            value="{{ csrf_token('contact_form') }}"
+                        >
+
+                        <div class="contact-field">
+                            <label for="contact-name">Nom *</label>
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                placeholder="Votre nom"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-email">Email *</label>
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="Votre adresse e-mail"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-subject">Sujet</label>
+                            <input
+                                type="text"
+                                id="contact-subject"
+                                name="subject"
+                                placeholder="Objet de votre message"
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-message">Message *</label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="4"
+                                placeholder="Votre message..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="contact-submit" type="submit">
+                            Envoyer mon message
+                            <span aria-hidden="true">→</span>
+                        </button>
+
+                        <p class="contact-form-note">
+                            Les champs marqués d'un * sont obligatoires.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="contact-bottom">
+                <div class="contact-bottom-message">
+                    <p>Une idée ?</p>
+                    <span>Un projet ?</span>
+                    <span>Écrivons la suite ensemble.</span>
+                </div>
+
+                <nav
+                    class="contact-socials"
+                    aria-label="Navigation complémentaire"
+                >
+                    <a href="{{ path('app_projets') }}">Mes projets</a>
+                    <a href="{{ path('app_parcours') }}">Mon parcours</a>
+                </nav>
+
+                <span class="contact-decoration" aria-hidden="true">✳</span>
+            </div>
+
+        </section>
+    </main>
+
 
 {% endblock %}
