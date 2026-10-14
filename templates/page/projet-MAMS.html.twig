@@ -1,84 +1,218 @@
-
 {% extends 'base.html.twig' %}
 
-{% block title %}Projet MAMS | Chancelle Ravelosoa{% endblock %}
+{% block title %}MAMS — Application de gestion des frais kilométriques | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
-    <main class="project-detail">
+    <main class="mams-page">
 
-        <section class="project-hero">
-            <a class="back-link" href="{{ path('app_projets') }}">
+        {# 1. INTRODUCTION DU PROJET #}
+        <section class="mams-hero container">
+            <a href="{{ path('app_projets') }}" class="mams-back-link">
                 ← Retour aux projets
             </a>
 
-            <p class="eyebrow">PROJET 02 · EXPÉRIENCE PROFESSIONNELLE</p>
+            <p class="eyebrow">PROJET PROFESSIONNEL · MAI 2024</p>
 
-            <h1>Application MAMS</h1>
+            <h1>MAMS</h1>
 
-            <p class="project-intro">
-                Participation au développement d'une application
-                de gestion des indemnités kilométriques dans le cadre
-                d'un stage chez MSConsulting en mai 2024.
+            <h2>Application web de gestion des frais kilométriques</h2>
+
+            <p class="mams-lead">
+                Concevoir et développer une application web métier
+                pour simplifier la gestion des déplacements professionnels
+                et le suivi des frais kilométriques.
             </p>
 
-            <div class="project-tags">
-                <span>PHP</span>
-                <span>Base de données</span>
-                <span>Maquettage</span>
-                <span>Développement web</span>
+            <div class="mams-meta">
+                <div>
+                    <span>Contexte</span>
+                    <strong>Stage chez MSConsulting</strong>
+                </div>
+
+                <div>
+                    <span>Organisation</span>
+                    <strong>Projet réalisé en binôme</strong>
+                </div>
+
+                <div>
+                    <span>Cycle du projet</span>
+                    <strong>Du cahier des charges au déploiement</strong>
+                </div>
             </div>
         </section>
 
-        <section class="project-section">
-            <p class="eyebrow">01 — LE CONTEXTE</p>
-            <h2>Répondre à un besoin de gestion</h2>
-
-            <p>
-                MAMS est un projet d'application lié à la gestion
-                des déplacements et des indemnités kilométriques.
-                Durant mon stage, j'ai participé à différentes étapes
-                de sa réalisation, en collaboration avec l'équipe.
+        {# 2. VISUEL DU PROJET #}
+        <section class="mams-visual container">
+            {# Remplace cette image par une véritable capture de MAMS #}
+            <img
+                src="{{ asset('images/MAMS.png') }}"
+                alt="Aperçu de l'application MAMS"
+            >
+            <p class="mams-caption">
+                Aperçu de l'application MAMS développée durant mon stage.
             </p>
         </section>
 
-        <section class="project-section project-highlight">
-            <p class="eyebrow">02 — MA CONTRIBUTION</p>
-            <h2>Participer à la réalisation de l'application</h2>
+        {# 3. CONTEXTE ET BESOIN #}
+        <section class="mams-section container">
+            <p class="eyebrow">01 · LE BESOIN</p>
 
-            <ul>
-                <li>Contribution à la base de données.</li>
-                <li>Participation à la réalisation de la page de connexion.</li>
-                <li>Contribution à la fonctionnalité d'ajout de trajets.</li>
-                <li>Participation à la gestion des trajets.</li>
-                <li>Réalisation de maquettes et de wireframes avec Balsamiq.</li>
-                <li>Contribution à l'intégration de l'interface.</li>
-            </ul>
+            <h2>Répondre à un besoin métier concret.</h2>
+
+            <p>
+                Le projet MAMS est né du besoin de simplifier la gestion
+                des déplacements professionnels et le suivi des dépenses
+                associées. L'objectif était de centraliser les informations
+                relatives aux trajets et aux frais kilométriques au sein
+                d'une application web intuitive.
+            </p>
+
+            <p>
+                L'application devait notamment permettre de renseigner
+                les véhicules utilisés, les points de départ, les
+                destinations et les frais annexes, tels que les péages
+                et le stationnement.
+            </p>
         </section>
 
-        <section class="project-section">
-            <p class="eyebrow">03 — LES COMPÉTENCES</p>
-            <h2>Une première expérience en équipe</h2>
+        {# 4. LES ÉTAPES DU PROJET #}
+        <section class="mams-section mams-process container">
+            <p class="eyebrow">02 · MA DÉMARCHE</p>
+
+            <h2>Du cahier des charges au déploiement.</h2>
+
+            <p class="mams-section-intro">
+                Avec mon binôme, j'ai participé aux différentes étapes
+                de réalisation de l'application, de la compréhension
+                du besoin jusqu'à sa mise en ligne.
+            </p>
+
+            <div class="mams-timeline">
+
+                <article class="mams-step">
+                    <span class="mams-step-number">01</span>
+                    <div>
+                        <h3>Analyse du besoin et cahier des charges</h3>
+                        <p>
+                            Comprendre les attentes du client, identifier
+                            les besoins fonctionnels et formaliser les
+                            objectifs de l'application.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="mams-step">
+                    <span class="mams-step-number">02</span>
+                    <div>
+                        <h3>Conception des interfaces</h3>
+                        <p>
+                            Préparer les maquettes avec Balsamiq et réfléchir
+                            à l'organisation des pages et au parcours utilisateur.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="mams-step">
+                    <span class="mams-step-number">03</span>
+                    <div>
+                        <h3>Développement de l'application</h3>
+                        <p>
+                            Participer à la réalisation des interfaces et
+                            des fonctionnalités, notamment la connexion
+                            et la gestion des trajets.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="mams-step">
+                    <span class="mams-step-number">04</span>
+                    <div>
+                        <h3>Gestion des données</h3>
+                        <p>
+                            Participer à la structuration et à la gestion
+                            de la base de données nécessaire au suivi
+                            des informations de l'application.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="mams-step">
+                    <span class="mams-step-number">05</span>
+                    <div>
+                        <h3>Déploiement</h3>
+                        <p>
+                            Participer à la dernière étape du projet :
+                            préparer et mettre l'application à disposition
+                            dans son environnement de déploiement.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        {# 5. ENVIRONNEMENT TECHNIQUE #}
+        <section class="mams-section mams-tech container">
+            <p class="eyebrow">03 · ENVIRONNEMENT TECHNIQUE</p>
+
+            <h2>Les technologies mobilisées.</h2>
+
+            <div class="mams-tech-list">
+                <span>PHP</span>
+                <span>Symfony</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+                <span>Balsamiq</span>
+            </div>
+        </section>
+
+        {# 6. BILAN DU PROJET #}
+        <section class="mams-section container">
+            <p class="eyebrow">04 · BILAN</p>
+
+            <h2>Une expérience de développement de bout en bout.</h2>
 
             <p>
-                Cette expérience m'a permis de découvrir le déroulement
-                d'un projet web en contexte professionnel et de mieux
-                comprendre le lien entre une interface, les données
-                et les fonctionnalités attendues.
+                Cette expérience m'a permis de découvrir les différentes
+                dimensions d'un projet informatique : comprendre le besoin,
+                préparer les interfaces, participer au développement,
+                travailler avec les données et contribuer au déploiement.
             </p>
 
             <p>
-                Elle m'a également permis de me familiariser avec
-                le maquettage et la traduction d'un besoin en éléments
-                concrets de développement.
+                Le travail en binôme m'a également permis de pratiquer
+                la collaboration dans un contexte professionnel et de
+                mieux comprendre le déroulement d'un projet d'application
+                web répondant à un besoin réel.
             </p>
+        </section>
+
+        {# 7. CONTACT #}
+        <section class="mams-contact container">
+            <p class="eyebrow">POUR ALLER PLUS LOIN</p>
+
+            <h2>Échangeons sur mon parcours et mes projets.</h2>
+
+            <p>
+                Je souhaite continuer à développer mes compétences
+                et contribuer à de nouveaux projets numériques.
+            </p>
+
+            <a href="{{ path('app_contact') }}" class="mams-contact-link">
+                Me contacter <span aria-hidden="true">→</span>
+            </a>
         </section>
 
         <nav class="project-navigation" aria-label="Navigation des projets">
             <a href="{{ path('app_projet_wordpress') }}">
                 ← Projet précédent : WordPress
             </a>
+
             <a href="{{ path('app_projet_sortir') }}">
-                Projet suivant : Sortir →
+                Projet suivant : Sortir.com →
             </a>
         </nav>
 

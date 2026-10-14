@@ -1,10 +1,240 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Services{% endblock %}
+{% block title %}Mes services | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
+    <main class="services-page">
 
-    <h1>Mes Services</h1>
-    <p>Des solutions concrètes, adaptées à vos besoins, avec une approche personnalisé et professionnelle.</p>
+        {# HERO #}
+        <section class="services-hero">
+            <div class="services-hero-content">
+                <p class="services-eyebrow">MES SERVICES</p>
 
+                <h1>
+                    Des solutions numériques
+                    <span>simples, soignées et utiles.</span>
+                </h1>
+
+                <p class="services-hero-intro">
+                    J'accompagne les particuliers, indépendants et petites
+                    structures dans la création de leurs supports numériques,
+                    avec une attention particulière portée à la clarté,
+                    à l'esthétique et aux besoins de chacun.
+                </p>
+
+                <a href="#offres" class="services-button">
+                    Découvrir mes services
+                    <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+
+            <div class="services-hero-decoration" aria-hidden="true">
+                <div class="services-decoration-card services-decoration-card-one">
+                    <span class="services-decoration-number">01</span>
+                    <span>Créer</span>
+                </div>
+
+                <div class="services-decoration-card services-decoration-card-two">
+                    <span class="services-decoration-number">02</span>
+                    <span>Structurer</span>
+                </div>
+
+                <div class="services-decoration-card services-decoration-card-three">
+                    <span class="services-decoration-number">03</span>
+                    <span>Améliorer</span>
+                </div>
+
+                <span class="services-decoration-circle"></span>
+            </div>
+        </section>
+
+        {# INTRODUCTION AUX OFFRES #}
+        <section class="services-offers" id="offres">
+            <div class="services-section-heading">
+                <p class="services-eyebrow">CE QUE JE PEUX PROPOSER</p>
+                <h2>Des services adaptés à vos besoins.</h2>
+                <p>
+                    Chaque projet commence par une écoute de vos besoins
+                    afin de définir une solution adaptée à votre objectif.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                {# SERVICE 1 #}
+                <article class="services-card">
+                    <div class="services-card-top">
+                        <span class="services-card-number">01</span>
+                        <span class="services-card-icon" aria-hidden="true">⌘</span>
+                    </div>
+
+                    <p class="services-card-category">WEB</p>
+                    <h3>Création de sites web</h3>
+
+                    <p class="services-card-description">
+                        Concevoir des pages web claires et structurées
+                        pour présenter une activité, un projet ou un portfolio.
+                    </p>
+
+                    <ul>
+                        <li>Intégration HTML et CSS</li>
+                        <li>Mise en page responsive</li>
+                        <li>Amélioration de la présentation</li>
+                    </ul>
+
+                    <p class="services-card-note">
+                        Selon les besoins et la complexité du projet.
+                    </p>
+                </article>
+
+                {# SERVICE 2 #}
+                <article class="services-card services-card-featured">
+                    <div class="services-card-top">
+                        <span class="services-card-number">02</span>
+                        <span class="services-card-icon" aria-hidden="true">✳</span>
+                    </div>
+
+                    <p class="services-card-category">WORDPRESS</p>
+                    <h3>Création de pages WordPress</h3>
+
+                    <p class="services-card-description">
+                        Organiser et personnaliser des pages de site
+                        pour rendre les informations plus accessibles
+                        et la présentation plus harmonieuse.
+                    </p>
+
+                    <ul>
+                        <li>Création de pages avec Elementor</li>
+                        <li>Organisation des contenus</li>
+                        <li>Choix de modèles et mise en page</li>
+                    </ul>
+
+                    <p class="services-card-note">
+                        Pour des sites vitrines simples et des besoins définis.
+                    </p>
+                </article>
+
+                {# SERVICE 3 #}
+                <article class="services-card">
+                    <div class="services-card-top">
+                        <span class="services-card-number">03</span>
+                        <span class="services-card-icon" aria-hidden="true">◇</span>
+                    </div>
+
+                    <p class="services-card-category">CRÉATION NUMÉRIQUE</p>
+                    <h3>Supports de communication</h3>
+
+                    <p class="services-card-description">
+                        Réaliser des supports visuels simples pour présenter
+                        une activité, annoncer un événement ou partager
+                        une information.
+                    </p>
+
+                    <ul>
+                        <li>Affiches et visuels avec Canva</li>
+                        <li>Présentations et diaporamas</li>
+                        <li>Mise en forme de contenus</li>
+                    </ul>
+
+                    <p class="services-card-note">
+                        En fonction du format et du contenu souhaités.
+                    </p>
+                </article>
+
+                {# SERVICE 4 #}
+                <article class="services-card">
+                    <div class="services-card-top">
+                        <span class="services-card-number">04</span>
+                        <span class="services-card-icon" aria-hidden="true">✓</span>
+                    </div>
+
+                    <p class="services-card-category">VÉRIFICATION</p>
+                    <h3>Tests et vérifications de pages web</h3>
+
+                    <p class="services-card-description">
+                        Vérifier le fonctionnement visible d'une page web,
+                        relever les anomalies constatées et les décrire
+                        clairement pour faciliter leur correction.
+                    </p>
+
+                    <ul>
+                        <li>Vérification des liens et boutons</li>
+                        <li>Contrôle de l'affichage</li>
+                        <li>Signalement des anomalies observées</li>
+                    </ul>
+
+                    <p class="services-card-note">
+                        Tests fonctionnels simples, selon le périmètre défini.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        {# MÉTHODE DE TRAVAIL #}
+        <section class="services-process">
+            <div class="services-process-heading">
+                <p class="services-eyebrow">MA MÉTHODE</p>
+                <h2>Un projet avance mieux avec une méthode claire.</h2>
+            </div>
+
+            <div class="services-process-grid">
+
+                <article class="services-process-item">
+                    <span>01</span>
+                    <h3>Échanger</h3>
+                    <p>
+                        Comprendre votre besoin, votre public et votre objectif.
+                    </p>
+                </article>
+
+                <article class="services-process-item">
+                    <span>02</span>
+                    <h3>Définir</h3>
+                    <p>
+                        Déterminer les éléments à réaliser et le périmètre
+                        du travail.
+                    </p>
+                </article>
+
+                <article class="services-process-item">
+                    <span>03</span>
+                    <h3>Réaliser</h3>
+                    <p>
+                        Avancer étape par étape et vous présenter
+                        le travail effectué.
+                    </p>
+                </article>
+
+                <article class="services-process-item">
+                    <span>04</span>
+                    <h3>Vérifier</h3>
+                    <p>
+                        Contrôler le résultat et effectuer les ajustements
+                        prévus ensemble.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        {# CONTACT #}
+        <section class="services-contact">
+            <p class="services-eyebrow">PARLONS DE VOTRE PROJET</p>
+
+            <h2>Vous avez un besoin numérique en tête ?</h2>
+
+            <p>
+                Décrivez-moi votre projet et vos attentes. Nous pourrons
+                échanger sur vos besoins et voir si je peux vous accompagner.
+            </p>
+
+            <a href="{{ path('app_contact') }}" class="services-button">
+                Me contacter
+                <span aria-hidden="true">→</span>
+            </a>
+        </section>
+
+    </main>
 {% endblock %}

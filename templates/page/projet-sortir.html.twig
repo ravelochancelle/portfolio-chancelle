@@ -11,7 +11,7 @@
                 ← Retour aux projets
             </a>
 
-            <p class="eyebrow">PROJET 03 · PROJET DE FORMATION</p>
+            <p class="eyebrow">PROJET 03 · DÉVELOPPEMENT WEB</p>
 
             <h1>Sortir</h1>
 
@@ -27,6 +27,8 @@
                 <span>PHP</span>
                 <span>Symfony</span>
                 <span>MySQL</span>
+                <span>Twig</span>
+                <span>Doctrine</span>
                 <span>HTML / CSS</span>
             </div>
         </section>
@@ -53,26 +55,36 @@
         <section class="project-section project-highlight">
             <p class="eyebrow">02 — MA CONTRIBUTION</p>
 
-            <h2>Concevoir des interfaces et développer des fonctionnalités</h2>
+            <h2>Participer au développement de l'application</h2>
+
+            <p>
+                Réalisé en équipe de quatre personnes, ce projet m'a permis
+                de contribuer à différentes étapes de conception et de
+                développement de l'application.
+            </p>
 
             <ul>
                 <li>
-                    Contribution à la conception des interfaces utilisateur.
+                    Participation à l'élaboration du projet et à la conception
+                    des interfaces.
                 </li>
                 <li>
-                    Participation au développement de la création des sorties.
+                    Contribution au développement de la page de connexion.
                 </li>
                 <li>
-                    Contribution à la recherche des sorties.
+                    Participation au développement des fonctionnalités
+                    de l'application.
                 </li>
                 <li>
-                    Participation à la fonctionnalité d'inscription aux sorties.
+                    Contribution à la recherche des sorties avec des filtres
+                    par lieu et par date.
                 </li>
                 <li>
-                    Travail sur la clarté et la fluidité du parcours utilisateur.
+                    Travail collaboratif sur l'affichage et la gestion des données.
                 </li>
             </ul>
         </section>
+
 
         <section class="project-section">
             <p class="eyebrow">03 — LES COMPÉTENCES</p>
@@ -92,15 +104,17 @@
             </p>
         </section>
 
+            
         <nav class="project-navigation" aria-label="Navigation des projets">
             <a href="{{ path('app_projet_mams') }}">
                 ← Projet précédent : MAMS
             </a>
 
-            <a href="{{ path('app_projets') }}">
-                Tous les projets →
+            <a href="{{ path('app_projet_skilldev') }}">
+                Projet suivant : SkillDev →
             </a>
         </nav>
+
 
     </main>
 {% endblock %}

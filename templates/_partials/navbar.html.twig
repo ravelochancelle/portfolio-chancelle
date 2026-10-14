@@ -6,17 +6,23 @@
 
     <nav class="main-nav">
 
-        <a href="{{ path('app_home') }}">Accueil</a>
+        <a href="{{ path('app_home') }}"
+           class="{{ app.request.attributes.get('_route') == 'app_home' ? 'active' : '' }}">Accueil</a>
 
-        <a href="{{ path('app_parcours') }}">Parcours</a>
+        <a href="{{ path('app_parcours') }}"
+           class="{{ app.request.attributes.get('_route') == 'app_parcours' ? 'active' : '' }}">Parcours</a>
 
-        <a href="{{ path('app_projets') }}">Projets</a>
+        <a href="{{ path('app_projets') }}"
+           class="{{ app.request.attributes.get('_route') == 'app_projets' ? 'active' : '' }}">Projets</a>
 
-        <a href="{{ path('app_services') }}">Services</a>
+        <a href="{{ path('app_services') }}"
+           class="{{ app.request.attributes.get('_route') == 'app_services' ? 'active' : '' }}">Services</a>
 
-        <a href="{{ path('app_competences') }}">Compétences</a>
+        <a href="{{ path('app_competences') }}"
+           class="{{ app.request.attributes.get('_route') == 'app_competences' ? 'active' : '' }}">Compétences</a>
 
-        <a href="{{ path('app_contact') }}">Contact</a>
+        <a href="{{ path('app_contact') }}"
+           class="{{ app.request.attributes.get('_route') == 'app_contact' ? 'active' : '' }}">Contact</a>
 
         <a class="btn-cv" href="/documents/CV-Chancelle-Ravelosoa.pdf" target="_blank">
             Télécharger mon CV

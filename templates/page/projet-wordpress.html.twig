@@ -1,11 +1,11 @@
-
 {% extends 'base.html.twig' %}
 
-{% block title %}Portfolio WordPress | Chancelle Ravelosoa{% endblock %}
+{% block title %}Projet WordPress | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
     <main class="project-detail">
 
+        {# INTRODUCTION #}
         <section class="project-hero">
             <a class="back-link" href="{{ path('app_projets') }}">
                 ← Retour aux projets
@@ -16,65 +16,130 @@
             <h1>Portfolio WordPress</h1>
 
             <p class="project-intro">
-                Concevoir une présence numérique claire, élégante
-                et cohérente, en mettant l'accent sur la présentation
-                des contenus et l'expérience utilisateur.
+                Concevoir une présence numérique claire et professionnelle,
+                en associant création de pages, identité visuelle,
+                adaptation aux écrans et communication avec les visiteurs.
             </p>
 
             <div class="project-tags">
                 <span>WordPress</span>
                 <span>Elementor</span>
+                <span>Starter Templates</span>
                 <span>Canva</span>
+                <span>Responsive Design</span>
             </div>
         </section>
 
+        {# CONTEXTE #}
         <section class="project-section">
             <p class="eyebrow">01 — LE CONTEXTE</p>
-            <h2>Donner forme à une idée</h2>
+            <h2>Construire un site cohérent et accessible</h2>
 
             <p>
-                Ce projet m'a permis d'explorer la création d'un site
-                WordPress et l'organisation de ses différentes sections.
-                L'objectif était de construire une présentation visuelle
-                cohérente et facile à parcourir.
+                Ce projet m'a permis de mettre en pratique la création
+                d'un site web avec WordPress. À partir de Starter Templates,
+                j'ai travaillé sur la structure des pages et leur mise en
+                forme avec Elementor, en accordant une attention particulière
+                à la lisibilité des contenus et à l'expérience utilisateur.
             </p>
         </section>
 
+        {# REALISATIONS #}
         <section class="project-section project-highlight">
             <p class="eyebrow">02 — LES RÉALISATIONS</p>
-            <h2>De la structure au design</h2>
+            <h2>De la structure à l'expérience utilisateur</h2>
 
             <ul>
-                <li>Prise en main de WordPress en environnement local.</li>
-                <li>Découverte et utilisation d'Elementor.</li>
-                <li>Exploration de Starter Templates pour la structure.</li>
-                <li>Travail sur la présentation et l'organisation des contenus.</li>
-                <li>Création de supports visuels avec Canva.</li>
+                <li>
+                    Prise en main de WordPress dans un environnement local
+                    avec Local.
+                </li>
+                <li>
+                    Utilisation de Starter Templates pour partir d'un modèle
+                    et structurer les pages du site.
+                </li>
+                <li>
+                    Utilisation d'Elementor pour travailler la présentation
+                    et l'organisation des contenus.
+                </li>
+                <li>
+                    Travail sur l'affichage responsive afin de conserver
+                    une navigation lisible sur différents écrans.
+                </li>
+                <li>
+                    Création de supports visuels avec Canva pour contribuer
+                    à la cohérence graphique du projet.
+                </li>
+                <li>
+                    Configuration du formulaire de contact avec SMTP
+                    et vérification de l'envoi des messages.
+                </li>
             </ul>
         </section>
 
+        {# RESPONSIVE #}
         <section class="project-section">
-            <p class="eyebrow">03 — LES COMPÉTENCES</p>
-            <h2>Ce que ce projet m'a apporté</h2>
+            <p class="eyebrow">03 — ADAPTATION AUX ÉCRANS</p>
+            <h2>Penser le site sur ordinateur et mobile</h2>
 
             <p>
-                Ce travail m'a permis de développer ma compréhension
-                de la structure d'un site web, de découvrir des outils
-                de création de pages et de mieux appréhender l'importance
-                de la cohérence visuelle.
+                L'affichage sur différents formats d'écran fait partie
+                des points importants de ce projet. J'ai vérifié le rendu
+                du site sur ordinateur et en mode mobile à l'aide des outils
+                de développement du navigateur.
             </p>
 
             <p>
-                Il constitue une première étape dans mon parcours
-                de création numérique et de développement web.
+                Cette vérification permet d'observer l'adaptation de la
+                navigation, la réorganisation des blocs et la lisibilité
+                des contenus selon la largeur de l'écran.
             </p>
         </section>
 
+        {# FORMULAIRE #}
+        <section class="project-section project-highlight">
+            <p class="eyebrow">04 — COMMUNICATION</p>
+            <h2>Rendre le formulaire de contact opérationnel</h2>
+
+            <p>
+                Un site doit aussi permettre aux visiteurs de prendre
+                contact. J'ai travaillé sur la configuration SMTP du
+                formulaire et vérifié son fonctionnement en effectuant
+                un envoi de test et en contrôlant la réception du message.
+            </p>
+        </section>
+
+        {# BILAN #}
+        <section class="project-section">
+            <p class="eyebrow">05 — LES COMPÉTENCES</p>
+            <h2>Ce que ce projet m'a appris</h2>
+
+            <h3>Création web</h3>
+            <p>
+                Prise en main de WordPress, utilisation d'Elementor
+                et structuration de pages à partir de Starter Templates.
+            </p>
+
+            <h3>Design et expérience utilisateur</h3>
+            <p>
+                Travail sur la cohérence graphique, la hiérarchie visuelle,
+                la lisibilité des contenus et l'adaptation aux écrans.
+            </p>
+
+            <h3>Résolution de problèmes</h3>
+            <p>
+                Vérification du rendu du site et recherche de solutions
+                lors de la configuration du formulaire de contact.
+                Cette démarche m'a appris à tester les fonctionnalités
+                et à vérifier les résultats obtenus.
+            </p>
+        </section>
+
+        {# NAVIGATION #}
         <nav class="project-navigation" aria-label="Navigation des projets">
             <a href="{{ path('app_projet_mams') }}">
                 Projet suivant : MAMS →
             </a>
-            
         </nav>
 
     </main>

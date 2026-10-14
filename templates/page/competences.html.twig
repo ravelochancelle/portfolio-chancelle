@@ -1,10 +1,193 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Compétences{% endblock %}
+{% block title %}Compétences | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
 
-    <h1>Mes Compétences</h1>
-    <p>Page en construction.</p>
+    <main class="competences-page">
+
+        {# INTRODUCTION #}
+        <section class="competences-hero">
+
+            <p class="competences-eyebrow">
+                MON SAVOIR-FAIRE
+            </p>
+
+            <h1>Mes compétences</h1>
+
+            <p class="competences-intro">
+                Du développement web à la création numérique,
+                je construis progressivement des compétences concrètes
+                à travers la pratique et la réalisation de projets.
+            </p>
+
+        </section>
+
+
+        {# COMPÉTENCES TECHNIQUES #}
+        <section class="competences-section">
+
+            <div class="competences-heading">
+                <p class="competences-number">01 — TECHNIQUE</p>
+                <h2>Développement web</h2>
+                <p>
+                    Concevoir des pages web et participer au développement
+                    d'applications avec des technologies adaptées aux besoins.
+                </p>
+            </div>
+
+            <div class="competences-grid">
+
+                <article class="competence-card">
+                    <span class="competence-icon">&lt;/&gt;</span>
+                    <h3>Intégration web</h3>
+                    <p>
+                        Structurer les pages et travailler leur présentation
+                        pour obtenir une interface claire et responsive.
+                    </p>
+                    <div class="competence-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                </article>
+
+                <article class="competence-card">
+                    <span class="competence-icon">{ }</span>
+                    <h3>Développement</h3>
+                    <p>
+                        Travailler sur la logique applicative, les contrôleurs,
+                        les routes et les formulaires.
+                    </p>
+                    <div class="competence-tags">
+                        <span>PHP</span>
+                        <span>Symfony</span>
+                        <span>Twig</span>
+                    </div>
+                </article>
+
+                <article class="competence-card">
+                    <span class="competence-icon">▤</span>
+                    <h3>Données &amp; outils</h3>
+                    <p>
+                        Manipuler des données et suivre les modifications
+                        d'un projet avec les outils de développement.
+                    </p>
+                    <div class="competence-tags">
+                        <span>MySQL</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        {# CRÉATION NUMÉRIQUE #}
+        <section class="competences-section competences-alternate">
+
+            <div class="competences-heading">
+                <p class="competences-number">02 — CRÉATION</p>
+                <h2>Création numérique</h2>
+                <p>
+                    Réaliser des supports visuels et contribuer à la création
+                    de sites web à l'aide d'outils accessibles.
+                </p>
+            </div>
+
+            <div class="competences-grid">
+
+                <article class="competence-card">
+                    <span class="competence-icon">W</span>
+                    <h3>Création de sites</h3>
+                    <p>
+                        Construire et personnaliser des pages de sites web
+                        à l'aide d'un système de gestion de contenu.
+                    </p>
+                    <div class="competence-tags">
+                        <span>WordPress</span>
+                        <span>Elementor</span>
+                    </div>
+                </article>
+
+                <article class="competence-card">
+                    <span class="competence-icon">✦</span>
+                    <h3>Visuels &amp; présentations</h3>
+                    <p>
+                        Créer des supports visuels et des présentations
+                        adaptés à leur objectif.
+                    </p>
+                    <div class="competence-tags">
+                        <span>Canva</span>
+                        <span>Photopea</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        {# TESTS ET QUALITÉ #}
+        <section class="competences-section">
+
+            <div class="competences-heading">
+                <p class="competences-number">03 — QUALITÉ</p>
+                <h2>Tests &amp; vérifications</h2>
+                <p>
+                    Vérifier le fonctionnement d'un site, repérer les anomalies
+                    et contribuer à améliorer l'expérience utilisateur.
+                </p>
+            </div>
+
+            <div class="competences-grid">
+
+                <article class="competence-card">
+                    <span class="competence-icon">✓</span>
+                    <h3>Tests fonctionnels</h3>
+                    <p>
+                        Vérifier les formulaires, les liens, la navigation
+                        et le comportement des fonctionnalités.
+                    </p>
+                </article>
+
+                <article class="competence-card">
+                    <span class="competence-icon">⌕</span>
+                    <h3>Détection d'anomalies</h3>
+                    <p>
+                        Repérer un comportement inattendu, décrire le problème
+                        rencontré et faciliter sa correction.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        {# CONCLUSION #}
+        <section class="competences-conclusion">
+
+            <p class="competences-eyebrow">
+                MA DÉMARCHE
+            </p>
+
+            <h2>Apprendre, pratiquer, progresser.</h2>
+
+            <p>
+                Chaque projet est l'occasion de consolider mes acquis,
+                de résoudre des problèmes concrets et de développer
+                ma pratique professionnelle.
+            </p>
+
+            <a href="{{ path('app_projets') }}" class="btn">
+                Découvrir mes projets →
+            </a>
+
+        </section>
+
+    </main>
 
 {% endblock %}

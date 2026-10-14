@@ -6,34 +6,43 @@
 {% block body %}
     <main class="projects-page">
 
+        {# INTRODUCTION #}
         <section class="projects-hero container">
             <p class="eyebrow">MON TRAVAIL · MES RÉALISATIONS</p>
 
-            <h1>Des projets pour apprendre, concevoir et progresser.</h1>
+            <h1>Mes projets, mes compétences en action.</h1>
 
             <p class="projects-intro">
-                Chaque projet représente une étape de mon parcours :
-                de la création de sites web à la participation au
-                développement d'applications, en passant par l'intégration web.
+                À travers ces réalisations, je mets en pratique mes compétences
+                en développement web, en intégration et en création numérique.
+                Chaque projet représente une étape de mon parcours et une
+                occasion de progresser.
             </p>
         </section>
 
-        <section class="projects-list container" aria-label="Liste de mes projets">
+        {# LISTE DES PROJETS #}
+        <section
+            class="projects-list container"
+            aria-label="Présentation de mes projets"
+        >
 
-            {# Projet 1 : WordPress #}
+            {# PROJET 01 #}
             <article class="project-item">
-                <div class="project-number">01</div>
+                <div class="project-number" aria-hidden="true">01</div>
 
                 <div class="project-content">
                     <p class="eyebrow">CRÉATION WEB</p>
+
                     <h2>Portfolio WordPress</h2>
 
-                    <p>
-                        Concevoir une présence en ligne et organiser les contenus
-                        pour présenter un profil et ses réalisations.
+                    <p class="project-description">
+                        Création et organisation de pages web avec WordPress
+                        et Elementor. Ce projet m'a permis de travailler sur
+                        la structure des pages, la présentation des contenus
+                        et l'identité visuelle.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tags" aria-label="Technologies utilisées">
                         <span>WordPress</span>
                         <span>Elementor</span>
                         <span>Canva</span>
@@ -43,34 +52,31 @@
                         class="project-link"
                         href="{{ path('app_projet_wordpress') }}"
                     >
-                        Découvrir le projet <span aria-hidden="true">→</span>
+                        Découvrir le projet
+                        <span aria-hidden="true">→</span>
                     </a>
-                </div>
-
-                <div class="project-visual">
-                    <img
-                        src="{{ asset('images/Portfolio_wordpress.png') }}"
-                        alt="Aperçu du projet de portfolio WordPress"
-                        loading="lazy"
-                    >
                 </div>
             </article>
 
-            {# Projet 2 : MAMS #}
+            {# PROJET 02 #}
             <article class="project-item">
-                <div class="project-number">02</div>
+                <div class="project-number" aria-hidden="true">02</div>
 
                 <div class="project-content">
                     <p class="eyebrow">EXPÉRIENCE PROFESSIONNELLE</p>
+
                     <h2>Application MAMS</h2>
 
-                    <p>
-                        Participation, pendant un stage chez MSConsulting,
+                    <p class="project-description">
+                        Durant mon stage chez MSConsulting, j'ai participé
                         à un projet de gestion des déplacements et des
-                        indemnités kilométriques.
+                        indemnités kilométriques. Cette expérience m'a
+                        permis de découvrir les besoins d'une application
+                        métier et de contribuer à certaines fonctionnalités
+                        et à la préparation des interfaces.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tags" aria-label="Compétences mobilisées">
                         <span>PHP</span>
                         <span>Base de données</span>
                         <span>Balsamiq</span>
@@ -80,33 +86,29 @@
                         class="project-link"
                         href="{{ path('app_projet_mams') }}"
                     >
-                        Découvrir le projet <span aria-hidden="true">→</span>
+                        Découvrir le projet
+                        <span aria-hidden="true">→</span>
                     </a>
-                </div>
-
-                <div class="project-visual">
-                    <img
-                        src="{{ asset('images/MAMS.png') }}"
-                        alt="Aperçu du projet d'application MAMS"
-                        loading="lazy"
-                    >
                 </div>
             </article>
 
-            {# Projet 3 : Sortir #}
+            {# PROJET 03 #}
             <article class="project-item">
-                <div class="project-number">03</div>
+                <div class="project-number" aria-hidden="true">03</div>
 
                 <div class="project-content">
                     <p class="eyebrow">PROJET DE FORMATION</p>
+
                     <h2>Application Sortir</h2>
 
-                    <p>
-                        Application web permettant de consulter des sorties,
-                        d'en proposer et de participer à leur organisation.
+                    <p class="project-description">
+                        Un projet de développement web qui me permet
+                        de mettre en pratique les concepts de PHP et
+                        Symfony, de structurer une application et de
+                        travailler avec une base de données MySQL.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tags" aria-label="Technologies utilisées">
                         <span>PHP</span>
                         <span>Symfony</span>
                         <span>MySQL</span>
@@ -116,34 +118,29 @@
                         class="project-link"
                         href="{{ path('app_projet_sortir') }}"
                     >
-                        Découvrir le projet <span aria-hidden="true">→</span>
+                        Découvrir le projet
+                        <span aria-hidden="true">→</span>
                     </a>
-                </div>
-
-                <div class="project-visual">
-                    <img
-                        src="{{ asset('images/Sortir.png') }}"
-                        alt="Aperçu du projet d'application Sortir"
-                        loading="lazy"
-                    >
                 </div>
             </article>
 
-            {# Projet 4 : SkillDev #}
+            {# PROJET 04 #}
             <article class="project-item">
-                <div class="project-number">04</div>
+                <div class="project-number" aria-hidden="true">04</div>
 
                 <div class="project-content">
                     <p class="eyebrow">INTÉGRATION WEB</p>
+
                     <h2>SkillDev — Landing page</h2>
 
-                    <p>
+                    <p class="project-description">
                         Reproduction d'une page de présentation d'une
-                        plateforme de formation en ligne, avec un travail
-                        sur la structure et la mise en page.
+                        plateforme de formation en ligne à partir d'un
+                        modèle. Le travail porte sur la structure HTML,
+                        l'organisation des sections et la mise en page CSS.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tags" aria-label="Technologies utilisées">
                         <span>HTML5</span>
                         <span>CSS3</span>
                         <span>Flexbox</span>
@@ -154,31 +151,70 @@
                         class="project-link"
                         href="{{ path('app_projet_skilldev') }}"
                     >
-                        Découvrir le projet <span aria-hidden="true">→</span>
+                        Découvrir le projet
+                        <span aria-hidden="true">→</span>
                     </a>
-                </div>
-
-                <div class="project-visual project-visual-placeholder">
-                    <span>SkillDev</span>
-                    <p>Landing page · HTML & CSS</p>
                 </div>
             </article>
 
         </section>
 
+        {# COMPÉTENCES ILLUSTRÉES PAR LES PROJETS #}
+        <section class="projects-skills container">
+            <p class="eyebrow">MON APPROCHE</p>
+
+            <h2>Des compétences mises en pratique.</h2>
+
+            <div class="projects-skills-grid">
+
+                <article class="projects-skill">
+                    <span class="skill-index">01</span>
+                    <h3>Concevoir</h3>
+                    <p>
+                        Organiser les pages, structurer les contenus et
+                        réfléchir à la présentation des interfaces.
+                    </p>
+                </article>
+
+                <article class="projects-skill">
+                    <span class="skill-index">02</span>
+                    <h3>Développer</h3>
+                    <p>
+                        Mettre en pratique les langages et outils du
+                        développement web à travers des projets concrets.
+                    </p>
+                </article>
+
+                <article class="projects-skill">
+                    <span class="skill-index">03</span>
+                    <h3>Progresser</h3>
+                    <p>
+                        Consolider mes acquis, comprendre les problèmes
+                        rencontrés et améliorer progressivement mon travail.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        {# APPEL À L'ACTION #}
         <section class="projects-contact container">
             <p class="eyebrow">ET MAINTENANT ?</p>
-            <h2>Un projet ou une opportunité à partager ?</h2>
+
+            <h2>Construisons la suite ensemble.</h2>
+
             <p>
-                Je souhaite continuer à développer mes compétences
-                et à les mettre en pratique dans un environnement professionnel.
+                Je souhaite mettre mes compétences en pratique,
+                continuer à progresser et contribuer à des projets
+                numériques au sein d'une équipe.
             </p>
 
             <a
                 class="project-link"
                 href="{{ path('app_contact') }}"
             >
-                Me contacter <span aria-hidden="true">→</span>
+                Me contacter
+                <span aria-hidden="true">→</span>
             </a>
         </section>
 

@@ -1,10 +1,215 @@
+
 {% extends 'base.html.twig' %}
 
-{% block title %}Parcours{% endblock %}
+{% block title %}Mon parcours | Chancelle Ravelosoa{% endblock %}
 
 {% block body %}
+    <main class="parcours-page">
 
-    <h1>Mon parcours</h1>
-    <p>Page en construction.</p>
+        {# INTRODUCTION ET PHOTO #}
+        <section class="parcours-hero">
+            <div class="parcours-hero-content">
+                <p class="parcours-eyebrow">MON PARCOURS · MON ÉVOLUTION</p>
 
+                <h1>
+                    Changer de voie,
+                    <span>sans repartir de zéro.</span>
+                </h1>
+
+                <p class="parcours-intro">
+                    Mon parcours n'est pas linéaire, et c'est justement
+                    ce qui fait sa richesse. De la finance à l'électronique,
+                    puis au développement web, j'ai appris à évoluer,
+                    à m'adapter et à construire un nouveau projet professionnel.
+                </p>
+
+                <a href="#mon-histoire" class="parcours-cta">
+                    Découvrir mon histoire
+                    <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+
+            <div class="parcours-portrait">
+                <div class="parcours-portrait-frame">
+                    <img
+                        src="{{ asset('images/Chancelle.jpg') }}"
+                        alt="Portrait de Chancelle Ravelosoa"
+                        loading="eager"
+                    >
+                </div>
+
+                <p class="parcours-portrait-caption">
+                    Chancelle Ravelosoa
+                    <span>Développement web · Création numérique</span>
+                </p>
+            </div>
+        </section>
+
+        {# MON HISTOIRE #}
+        <section class="parcours-histoire" id="mon-histoire">
+            <div class="parcours-section-heading">
+                <p class="parcours-eyebrow">MON HISTOIRE</p>
+                <h2>Un parcours construit avec curiosité et détermination.</h2>
+                <p>
+                    Chaque étape m'a apporté des connaissances,
+                    des méthodes de travail et une nouvelle façon
+                    d'aborder les problèmes.
+                </p>
+            </div>
+
+            <div class="parcours-timeline">
+
+                <article class="parcours-timeline-item">
+                    <div class="parcours-timeline-number">01</div>
+
+                    <div class="parcours-timeline-content">
+                        <p class="parcours-period">MES PREMIÈRES FORMATIONS</p>
+                        <h3>Finance, comptabilité et électronique</h3>
+
+                        <p>
+                            J'ai commencé mon parcours par des études
+                            financières et comptables, avant de poursuivre
+                            avec un diplôme d'ingénieur en électronique.
+                        </p>
+
+                        <p>
+                            Ces formations m'ont familiarisée avec l'analyse,
+                            la logique, la rigueur et la recherche de solutions.
+                            Des acquis que je souhaite aujourd'hui mobiliser
+                            dans le domaine du numérique.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="parcours-timeline-item">
+                    <div class="parcours-timeline-number">02</div>
+
+                    <div class="parcours-timeline-content">
+                        <p class="parcours-period">2024 · RECONVERSION</p>
+                        <h3>Le choix du développement web</h3>
+
+                        <p>
+                            J'ai choisi de me reconvertir dans le numérique
+                            et suivi une formation de Développeuse Web et
+                            Web Mobile à l'ENI.
+                        </p>
+
+                        <p>
+                            J'y ai travaillé les bases du développement web :
+                            HTML, CSS, PHP, Symfony et MySQL, ainsi que
+                            l'organisation du code et la gestion de données.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="parcours-timeline-item">
+                    <div class="parcours-timeline-number">03</div>
+
+                    <div class="parcours-timeline-content">
+                        <p class="parcours-period">MA PREMIÈRE EXPÉRIENCE</p>
+                        <h3>Mettre en pratique mes connaissances</h3>
+
+                        <p>
+                            Lors de mon stage chez MSConsulting en mai 2024,
+                            j'ai contribué au projet MAMS, un outil de gestion
+                            des indemnités kilométriques.
+                        </p>
+
+                        <p>
+                            J'ai notamment participé à des travaux autour
+                            de la base de données, de la connexion utilisateur
+                            et de la gestion des déplacements, ainsi qu'à
+                            la réflexion sur les interfaces.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="parcours-timeline-item">
+                    <div class="parcours-timeline-number">04</div>
+
+                    <div class="parcours-timeline-content">
+                        <p class="parcours-period">AUJOURD'HUI</p>
+                        <h3>Continuer à pratiquer et progresser</h3>
+
+                        <p>
+                            Je développe actuellement mon portfolio avec
+                            Symfony afin de consolider mes acquis et de
+                            présenter concrètement mon travail.
+                        </p>
+
+                        <p>
+                            Je découvre également d'autres outils numériques,
+                            notamment WordPress et Canva, et je poursuis
+                            ma recherche d'une première expérience
+                            professionnelle durable dans le numérique.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        {# COMPÉTENCES ET APPROCHE #}
+        <section class="parcours-approche">
+            <div class="parcours-approche-heading">
+                <p class="parcours-eyebrow">MON APPROCHE</p>
+                <h2>Ce que j'apporte à un projet</h2>
+            </div>
+
+            <div class="parcours-approche-grid">
+
+                <article class="parcours-approche-card">
+                    <span class="parcours-card-number">01</span>
+                    <h3>La rigueur</h3>
+                    <p>
+                        Une approche structurée, attentive aux détails
+                        et à la cohérence du travail réalisé.
+                    </p>
+                </article>
+
+                <article class="parcours-approche-card">
+                    <span class="parcours-card-number">02</span>
+                    <h3>La capacité d'adaptation</h3>
+                    <p>
+                        Un parcours pluridisciplinaire qui m'a appris
+                        à découvrir de nouveaux environnements et outils.
+                    </p>
+                </article>
+
+                <article class="parcours-approche-card">
+                    <span class="parcours-card-number">03</span>
+                    <h3>L'envie d'apprendre</h3>
+                    <p>
+                        La volonté de pratiquer, de comprendre mes erreurs
+                        et de progresser à travers des projets concrets.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        {# CONCLUSION #}
+        <section class="parcours-conclusion">
+            <p class="parcours-eyebrow">LA SUITE DE MON PARCOURS</p>
+
+            <h2>Apprendre, pratiquer, progresser.</h2>
+
+            <p>
+                Aujourd'hui, mon objectif est de mettre mes compétences
+                en pratique au sein d'une équipe, de continuer à apprendre
+                et de contribuer à des projets numériques concrets.
+            </p>
+
+            <div class="parcours-conclusion-actions">
+                <a href="{{ path('app_projets') }}" class="parcours-cta">
+                    Découvrir mes projets
+                </a>
+
+                <a href="{{ path('app_contact') }}" class="parcours-link">
+                    Me contacter →
+                </a>
+            </div>
+        </section>
+
+    </main>
 {% endblock %}
